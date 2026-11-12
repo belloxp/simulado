@@ -1,0 +1,79 @@
+###CADASTRAR
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+    "nome" : "bello",
+    "email" : "g3",
+    "senha" : "1",
+    "cpf" : "16620509924"
+}
+
+###LISTAR
+GET http://localhost:3000/funcionarios
+Content-Type: application/json
+
+###CONSULTAR
+GET http://localhost:3000/funcionario/1
+Content-Type: application/json
+
+###DELETAR
+DELETE  http://localhost:3000/funcionario/3
+Content-Type: application/json
+
+//CLIENTE
+
+###CADASTRAR
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome" : "bello",
+    "cpf" : "16620509924"
+}
+
+###LISTAR
+GET http://localhost:3000/clientes
+Content-Type: application/json
+
+###CONSULTAR
+GET http://localhost:3000/cliente/1
+Content-Type: application/json
+
+###DELETAR
+DELETE  http://localhost:3000/cliente/2
+Content-Type: application/json
+
+
+//EQUIPAMENTO
+
+###CADASTRAR
+POST http://localhost:3000/equipamento
+Content-Type: application/json
+
+{
+    "modelo" : "Serra",
+    "fabricante" : "BELLULU",
+    "numeroSerie" : 1,
+    "idCliente" : 1
+}
+
+###LISTAR
+GET http://localhost:3000/equipamentos
+Content-Type: application/json
+
+//INSPECOES
+
+###CADASTRAR
+POST http://localhost:3000/inspecao
+Content-Type: application/json
+
+{
+    "tipo" : "REALIZADA",
+    "data" : "Wed, 21 Oct 2015 18:27:50 GMT",
+    "idEquipamento" : 1
+}
+
+###LISTAR
+GET http://localhost:3000/inspecoes
+Content-Type: application/json

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRAR FUNCIONARIO</title>
+    <script src="../js/cadInspecao.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">HOME</a><br>
+        <a href="./cadInspecao.html">CADASTRAR</a>
+        <a href="./listInspecao.html">LISTAR</a>
+    </nav>
+    
+    <h1>CADASTRAR</h1><br>
+    <label for="">CÓDIGO EQUIPAMENTO</label><br>
+    <input type="text" id="idEquipamento"><br>
+
+    <label for="">TIPO</label><br>
+    <select name="" id="tipo">
+        <option value="PENDENTE">PENDENTE</option>
+        <option value="REALIZADA">REALIZADA</option>
+    </select>
+
+    <label for="">data</label><br>
+    <input type="date" id="data"><br>
+
+    <button id="cadastrar">CADASTRAR</button><br>
+    <div id="res"></div>
+</body>
+</html>
